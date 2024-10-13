@@ -1,0 +1,7 @@
+[user]
+	name = Rodion Borovyk
+	email = rodion.borovyk@gmail.com
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
