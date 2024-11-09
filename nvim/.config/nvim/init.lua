@@ -10,6 +10,9 @@ vim.opt.smartcase = true
 vim.opt.signcolumn = "yes"
 vim.opt.background = "dark"
 
+vim.g.netrw_banner = 0
+vim.g.netrw_liststyle = 3
+
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
@@ -300,3 +303,5 @@ vim.keymap.set("n", "<leader>ca", ":RustLsp codeAction<CR>", { desc = "code acti
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename" })
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
 vim.keymap.set("n", "<leader>gr", require("telescope.builtin").lsp_references, { desc = "[G]oto [R]eferences" })
+
+vim.cmd([[autocmd BufNewFile,BufRead,BufWinEnter * set formatoptions-=cro]])
