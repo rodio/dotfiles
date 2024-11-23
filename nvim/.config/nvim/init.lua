@@ -224,7 +224,9 @@ require("lazy").setup({
 			{ "j-hui/fidget.nvim", opts = {} },
 		},
 		server = {
-			on_attach = function(client, bufnr) end,
+			on_attach = function(client, bufnr)
+				vim.keymap.set("n", "<leader>ca", ":RustLsp codeAction<CR>", { desc = "code actions", silent = true })
+			end,
 		},
 	},
 	{ -- Autoformat
@@ -260,11 +262,9 @@ require("lazy").setup({
 		"neovim/nvim-lspconfig",
 		config = function()
 			require("lspconfig").zls.setup({})
+			require("lspconfig").clangd.setup({})
 		end,
 	},
-	-- {
-	-- 	"fatih/vim-go",
-	-- },
 	{
 		"ray-x/go.nvim",
 		dependencies = { -- optional packages
@@ -301,7 +301,7 @@ vim.diagnostic.config({
 	},
 })
 
-vim.keymap.set("n", "<leader>ca", ":RustLsp codeAction<CR>", { desc = "code actions", silent = true })
+vim.keymap.set("n", "<leader>m", ":Man<CR>", { desc = "man page", silent = true })
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename" })
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
 vim.keymap.set("n", "<leader>gr", require("telescope.builtin").lsp_references, { desc = "[G]oto [R]eferences" })
