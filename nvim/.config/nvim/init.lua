@@ -45,6 +45,7 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+	{ "tpope/vim-sleuth" },
 	{
 		"catppuccin/nvim",
 		priority = 1000, -- Make sure to load this before all the other start plugins.
