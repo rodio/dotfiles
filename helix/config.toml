@@ -1,0 +1,10 @@
+theme = "ayu_evolve"
+
+[editor]
+line-number = "relative"
+
+[keys.normal]
+# Mac Alt-o
+"ø" = "expand_selection"
+# Mac Alt-i
+"ˆ" = "shrink_selection"
