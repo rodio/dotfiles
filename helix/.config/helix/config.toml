@@ -2,6 +2,10 @@ theme = "ayu_evolve"
 
 [editor]
 line-number = "relative"
+rulers = [120]
+bufferline = "multiple"
+[editor.inline-diagnostics]
+cursor-line = "hint"
 
 [keys.normal]
 # Mac Alt-o

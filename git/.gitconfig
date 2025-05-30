@@ -1,7 +1,10 @@
 [user]
 	name = Rodion Borovyk
 	email = rodion.borovyk@gmail.com
+	signingkey = 7E0E7E4BBBAADEC3
 [core]
-	editor = nvim
+	editor = hx
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true

@@ -3,3 +3,11 @@ name = "rust"
 language-id = "rust"
 # [language-server.rust-analyzer.config.check]
 # command = "clippy"
+[language-server.emmet-lsp]
+command = "emmet-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "html"
+roots = [".git"]
+language-servers = ["emmet-lsp"]
