@@ -4,6 +4,7 @@ theme = "ayu_evolve"
 line-number = "relative"
 rulers = [120]
 bufferline = "multiple"
+popup-border = "all"
 [editor.inline-diagnostics]
 cursor-line = "hint"
 
