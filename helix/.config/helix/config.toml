@@ -8,6 +8,9 @@ popup-border = "all"
 [editor.inline-diagnostics]
 cursor-line = "hint"
 
+[editor.statusline]
+right = ["selections", "position", "position-percentage","spacer", "version-control"]
+
 [keys.normal]
 # Mac Alt-o
 "ø" = "expand_selection"
