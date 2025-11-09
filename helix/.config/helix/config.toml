@@ -16,3 +16,6 @@ right = ["selections", "position", "position-percentage","spacer", "version-cont
 "ø" = "expand_selection"
 # Mac Alt-i
 "ˆ" = "shrink_selection"
+[keys.normal.space]
+"z" = ":buffer-close"
+
