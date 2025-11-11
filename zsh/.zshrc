@@ -633,3 +633,5 @@ fi
   'unset' '__fzf_completion_options'
 }
 ### end: completion.zsh ###
+
+. "$HOME/.local/bin/env"
