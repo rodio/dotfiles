@@ -1,7 +1,6 @@
 theme = "ayu_evolve"
 
 [editor]
-line-number = "relative"
 rulers = [120]
 bufferline = "multiple"
 popup-border = "all"
